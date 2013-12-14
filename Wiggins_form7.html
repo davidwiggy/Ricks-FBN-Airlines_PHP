@@ -1,0 +1,162 @@
+<!-Timothy Wiggins
+   Form for program 7-->
+<html>
+<head>
+<title>Rick's Flight's</title>
+<h1><center>Welcome to Rick's FBN Airlines</center></h1>
+</head>
+    <body bgcolor = yellow>
+
+    <fieldset><legend><h2><b>Please make your choices in the form below.</b></h2></legend>
+    <form action = "Wiggins_program7.php" method = "POST">
+    <b>Please enter your full name.	</b>
+    <input type = "text" name="username" size = 50>
+
+    <br />
+    <br />
+    <table cellpadding="10" cellspacing="1" border="1" bgcolor="orange">
+    <tr>
+    <td colspan='9'><div align='center'><b><h2>Destination Table</h2></b>
+    </td></div></tr>
+    <tr>
+    <td><b>Destination</b></td>
+    <td><b>Flight Number</b></td>
+    <td><b>Departure Time</b></td>
+    <td><b>Flying Time</b></td>
+    <td><b>One-Way Price</b></td>
+    <td><b>Round-Trip Price</b></td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value = "Miami"/>Miami</td>
+    <td>MI-239</td>
+    <td>12:00 pm</td>
+    <td>1 Hour 29 Minutes</td>
+    <td>$345.00</td>
+    <td>$450.00</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Orlando"/>Orlando</td>
+    <td>ORL-345</td>
+    <td>1:30 pm</td>
+    <td>1 Hour 5 Minutes</td>
+    <td>$245.00</td>
+    <td>$310.00</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Atlanta"/>Atlanta</td>
+    <td>ATL-980</td>
+    <td>9:30 am</td>
+    <td>20 Minutes</td>
+    <td>$175.00</td>
+    <td>$250.00</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Myrtle Beach"/>Myrtle Beach</td>
+    <td>MB-345</td>
+    <td>10:15 am</td>
+    <td>15 Minutes</td>
+    <td>$75.00</td>
+    <td>$125.00</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Outer Banks"/>Outer Banks</td>
+    <td>OB-3432</td>
+    <td>2:45 pm</td>
+    <td>32 Minutes</td>
+    <td>$219.00</td>
+    <td>$378.95</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Charlotte"/>Charlotte</td>
+    <td>CH-009</td>
+    <td>7:45 pm</td>
+    <td>15 Minutes</td>
+    <td>$210.98</td>
+    <td>$313.30</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Nashville"/>Nashville</td>
+    <td>BNA-343</td>
+    <td>3:30 pm</td>
+    <td>1 Hour 35 Minutes</td>
+    <td>$345.99</td>
+    <td>$450.99</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Memphis"/>Memphis</td>
+    <td>MEM-989</td>
+    <td>5:00 pm</td>
+    <td>1 Hour 50 Minutes</td>
+    <td>$450.99</td>
+    <td>$550.00</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="Williamsburg"/>Williamsburg</td>
+    <td>WMBG-333</td>
+    <td>6:30 pm</td>
+    <td>2 Hours 15 Minutes</td>
+    <td>$275.00</td>
+    <td>$399.99</td>
+    </tr>
+    <tr>
+    <td><input type="radio" name="choice" value="New Orleans"/>New Orleans</td>
+    <td>NO-455</td>
+    <td>4:15 pm</td>
+    <td>2 Hours 30 Minutes</td>
+    <td>$299.99</td>
+    <td>$399.99</td>
+    </tr>
+    <tr>
+    <td colspan='9'><div align='center'><small>These Prices all reflect Business Class, First Class Tickets are 20% higher.<br>All Flights are based out of Charleston, South Carolina.</small></td></div></tr>
+    </table>
+    <br>
+    <br>
+
+    Please choose One Way or Round Trip.
+    <br>
+    <select name="tripWay">
+    <option selected value="One-Way">One-Way</option>
+    <option value="Round-Trip">Round-Trip</option>
+    </select>
+    <br>
+    <br>
+    
+    Please choose which class you would like to fly.
+    <br>
+    <select name="class">
+    <option value="Business">Business Class</option>
+    <option value="First">First Class</option>
+    </select>
+    <br>
+    <br>
+
+    How Many tickets would you like?
+    <input type=text name="amountOfTickets" value=1>
+    <br>
+    <br>
+
+    Please choose Aisle or Window.
+    <br>
+    <select name="seat">
+    <option selected value="Aisle">Aisle</option>
+    <option value="Window">Window</option>
+    </select>
+    <br>
+    <br>
+
+    Flight options, you can select as many as you want or none at all.
+    <br>
+
+    <input type="checkbox" name="options[]" value="insurance"/>Trip insurance($34.95)[It's for your loved ones!]<br>
+    <input type="checkbox" name="options[]" value="meal"/>Meal on the flight($5.50)[A cold scrumptious box lunck.]<br>
+    <input type="checkbox" name="options[]" value="warmer"/>Seat Warmer($2.50)[Sometimes the heater falters a bit.]<br>
+    <input type="checkbox" name="options[]" value="internet"/>Internet Connection($19.95)[Guaranteed 2KB download speeds.]<br>
+    <input type="checkbox" name="options[]" value="hotel"/>Hotel Accommodations at Destination($134.95)[Guaranteed bedbug-free.]<br>
+
+    </fieldset>
+    <p /><input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+    </form>
+
+</body>
+</html>
